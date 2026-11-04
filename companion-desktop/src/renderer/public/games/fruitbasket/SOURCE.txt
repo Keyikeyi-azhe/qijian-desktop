@@ -1,0 +1,4 @@
+Fruit Basket original source: https://github.com/jjkay03/Fruit-Basket
+Commit b8ff578fc29b38dd66603d62e2ffaa77367867ac
+Original assets by jjkay03 and credited contributors. No project-wide license verified; local prototype only.
+Qijian web adaptation, not the original Unity build. Original fruit images and merge/scoring/queue rules; physics/rendering/UI rewritten with Matter.js 0.20.0 (MIT).

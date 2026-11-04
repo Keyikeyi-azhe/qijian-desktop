@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 740 610" fill="none">
+  <ellipse cx="482" cy="515" rx="268" ry="40" fill="#DBE0CB" opacity=".5"/>
+  <!-- Oak platform and two sage walls -->
+  <path d="M182 365L477 196L800 381L505 555L182 381Z" fill="#C6B38C"/>
+  <path d="M182 365L477 196L800 381L505 537Z" fill="#E6D6B5"/>
+  <path d="M182 365V137L477 16V196Z" fill="#D3DDC2"/>
+  <path d="M477 16L800 201V381L477 196Z" fill="#BDCCA9"/>
+  <path d="M182 137L193 131L477 10L809 196L800 201L477 24L193 145V359L182 365Z" fill="#E7EBD7"/>
+  <path d="M477 24V196" stroke="#AEBE9E" stroke-width="3"/>
+  <path d="M193 347L477 183L790 362" stroke="#E7E9D4" stroke-width="10"/>
+  <g stroke="#CCBC9C" stroke-width="1.5" opacity=".65"><path d="M243 400L531 229M303 435L591 264M364 469L652 299M425 503L712 334M488 533L773 369"/><path d="M246 328L566 503M308 294L624 468M365 261L682 434M421 228L741 400"/></g>
+  <!-- Window and sunlit panes -->
+  <path d="M247 153L405 86V228L247 317Z" fill="#A5B799"/>
+  <path d="M256 158L396 99V223L256 300Z" fill="#F4F2D9"/>
+  <path d="M265 163L320 140V207L265 237Z" fill="#E0E8D5"/>
+  <path d="M329 136L387 111V172L329 203Z" fill="#E6EBD9"/>
+  <path d="M265 247L320 217V258L265 287Z" fill="#D4DFBE"/>
+  <path d="M329 212L387 181V222L329 253Z" fill="#DBE4CA"/>
+  <path d="M272 227Q293 200 317 208M337 194Q363 164 385 178" stroke="#C5D3B0" stroke-width="10"/>
+  <path d="M241 315L405 225L416 232L251 326Z" fill="#F4EFDB"/>
+  <path d="M235 157L256 149L256 276L240 285Z" fill="#E7E9D5"/><path d="M397 91L417 83L417 215L399 225Z" fill="#E2E6D0"/>
+  <!-- Wall print -->
+  <path d="M639 151L698 185V253L639 219Z" fill="#E9E4CC" stroke="#9BAA88" stroke-width="4"/>
+  <path d="M654 174L683 191V231L654 214Z" fill="#CFD6B6"/>
+  <path d="M668 216V191M668 204Q650 192 658 187Q669 188 668 204M669 210Q683 205 680 198Q669 195 669 210" stroke="#92A37C" stroke-width="3"/>
+  <!-- Sofa base and angled upholstery -->
+  <path d="M519 338L659 418L749 365L612 287Z" fill="#8E9F73"/>
+  <path d="M519 338V365L657 444L659 418Z" fill="#8A9B6F"/>
+  <path d="M659 418L749 365V392L657 444Z" fill="#71865B"/>
+  <path d="M529 365V382M650 437V451M736 392V408" stroke="#8D7957" stroke-width="9"/>
+  <path d="M606 270Q606 256 617 263L749 338Q758 344 753 359L738 381L594 298Z" fill="#A1B48A"/>
+  <path d="M535 328L596 293L657 328L596 365Z" fill="#B8C69F" stroke="#A6B68B" stroke-width="2"/>
+  <path d="M599 367L661 330L728 368L665 407Z" fill="#AFBF94" stroke="#A0B184" stroke-width="2"/>
+  <path d="M517 319Q516 310 526 314L548 327V363L528 352Q519 348 519 340Z" fill="#C1CCAA"/>
+  <path d="M517 319L538 306L561 318L548 327Z" fill="#C9D3B3"/>
+  <path d="M649 397Q649 388 660 392L684 406V435L658 422Q649 417 649 409Z" fill="#ADBF95"/>
+  <path d="M649 397L727 351Q734 347 741 352L753 359L684 406Z" fill="#C0CCAA"/>
+  <path d="M649 397V418L684 438V406Z" fill="#A4B58A"/>
+  <path d="M684 406L753 366V392L684 438Z" fill="#8FA376"/>
+  <path d="M596 298L614 279L644 296L632 326Z" fill="#E6DDC3" stroke="#D5CCAD" stroke-width="2"/>
+  <path d="M682 333L699 317L725 333L714 359Z" fill="#E2CBA3" stroke="#CAB58D" stroke-width="2"/>
+  <!-- Woven rug -->
+  <path d="M326 395L447 326Q458 321 469 327L622 415Q634 422 621 431L504 498Q492 505 480 498L327 410Q315 403 326 395Z" fill="#F5EFDA"/>
+  <path d="M345 399L457 337L607 422L494 487Z" stroke="#DED8BD" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M347 416L468 346M366 426L487 357M385 437L506 368M404 448L525 379M424 460L545 390M445 471L566 401" stroke="#E7DFC7" stroke-width="2"/>
+  <!-- Desk with drawers -->
+  <path d="M243 325L319 282L427 343L351 387Z" fill="#D5B88A"/>
+  <path d="M243 325V335L351 397V387Z" fill="#B99A70"/><path d="M351 387L427 343V353L351 397Z" fill="#C6A87C"/>
+  <path d="M253 335V395M341 389V446M416 352V402" stroke="#B49B71" stroke-width="9"/>
+  <path d="M365 381L410 355V387L365 413Z" fill="#CFB88C"/>
+  <path d="M383 384L395 377" stroke="#9F8964" stroke-width="3" stroke-linecap="round"/>
+  <!-- Books and desk lamp -->
+  <path d="M271 322L299 306L331 323L302 341Z" fill="#EEEAD4"/><path d="M271 322V329L302 347V341Z" fill="#C1C6A5"/><path d="M302 341L331 323V330L302 347Z" fill="#E4E2CB"/>
+  <path d="M277 313L301 299L329 315L305 329Z" fill="#92A785"/><path d="M277 313V319L305 335V329Z" fill="#738E68"/><path d="M305 329L329 315V321L305 335Z" fill="#D6D9BC"/>
+  <ellipse cx="371" cy="331" rx="16" ry="8" fill="#8A9375"/><path d="M371 328V291L349 278" stroke="#7F8D6D" stroke-width="4"/><path d="M335 274Q350 253 365 272L366 283Q350 292 333 283Z" fill="#8C9E79"/>
+  <path d="M339 282Q350 287 361 282" stroke="#E9DDB6" stroke-width="4"/>
+  <!-- Chair -->
+  <path d="M280 382L313 363L350 384L317 405Z" fill="#B2BF95"/><path d="M280 382V391L317 412V405Z" fill="#8E9F74"/><path d="M317 405L350 384V393L317 412Z" fill="#9AAA7F"/>
+  <path d="M286 390V424M340 397V431M315 409V443" stroke="#B09B75" stroke-width="6"/>
+  <path d="M279 382V351Q279 342 286 346L311 360Q318 364 318 372V405Z" fill="#B8C59D"/>
+  <!-- Low coffee table -->
+  <path d="M439 397V432M511 425V460M551 400V434" stroke="#B49A70" stroke-width="8"/>
+  <ellipse cx="493" cy="397" rx="65" ry="36" fill="#BEA57E"/>
+  <ellipse cx="493" cy="390" rx="65" ry="36" fill="#DFCAA3"/>
+  <path d="M463 380L485 368L511 382L489 395Z" fill="#F5EDD7"/>
+  <path d="M463 380V385L489 400V395Z" fill="#C6BA94"/><path d="M489 395L511 382V387L489 400Z" fill="#E9DFC2"/>
+  <ellipse cx="521" cy="396" rx="12" ry="6" fill="#B7AA83"/><path d="M513 381V394Q521 401 529 394V381Z" fill="#F6F0DA"/><ellipse cx="521" cy="381" rx="8" ry="4" fill="#FFF9E6"/><ellipse cx="521" cy="382" rx="5" ry="2" fill="#BAA17A"/><path d="M529 384C540 380 539 394 529 391" stroke="#F6F0DA" stroke-width="4"/>
+  <!-- Plant at the front -->
+  <ellipse cx="250" cy="418" rx="25" ry="13" fill="#C2B498"/><path d="M226 407L231 437Q250 451 268 437L274 407Z" fill="#D5C4A0"/><ellipse cx="250" cy="407" rx="24" ry="12" fill="#E5D6B5"/><ellipse cx="250" cy="407" rx="18" ry="8" fill="#A49675"/>
+  <path d="M250 406V342M250 389L226 367M250 373L270 348" stroke="#879B6B" stroke-width="4"/>
+  <path d="M249 365C220 357 222 334 229 330C247 331 255 346 249 365Z" fill="#91A574"/><path d="M249 384C272 384 290 363 279 355C262 353 251 366 249 384Z" fill="#A5B486"/><path d="M249 398C222 400 209 379 217 369C234 367 248 379 249 398Z" fill="#7F9768"/><path d="M250 354C267 345 271 323 263 318C249 326 244 339 250 354Z" fill="#A8B68B"/>
+  <!-- Small companion on the rug -->
+  <ellipse cx="561" cy="474" rx="25" ry="9" fill="#D2C9AD" opacity=".7"/>
+  <path d="M544 447C543 431 550 422 561 422C576 422 580 433 580 448V462Q580 477 561 477Q542 477 542 463Z" fill="#FBF6E7" stroke="#DFD7BE" stroke-width="1.5"/>
+  <path d="M561 423Q549 415 553 408Q563 410 562 423M562 422Q564 407 573 409Q574 420 562 422" fill="#91A774"/>
+  <path d="M544 457Q561 466 579 457V464Q561 472 544 464Z" fill="#A1B587"/><path d="M569 464V477L575 475V462" fill="#8DA573"/>
+  <ellipse cx="553" cy="444" rx="1.7" ry="2.5" fill="#666B50"/><ellipse cx="570" cy="444" rx="1.7" ry="2.5" fill="#666B50"/><path d="M559 450Q562 453 565 450" stroke="#87866C" stroke-width="1.3" stroke-linecap="round"/>
+  <ellipse cx="549" cy="450" rx="3" ry="2" fill="#ECD6BD"/><ellipse cx="574" cy="450" rx="3" ry="2" fill="#ECD6BD"/>
+</svg>

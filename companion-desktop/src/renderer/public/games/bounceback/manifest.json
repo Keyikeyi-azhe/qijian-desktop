@@ -1,0 +1,18 @@
+{
+  "id": "bounceback",
+  "prepared": "2026-11-04",
+  "sha256": {
+    "cover.webp": "5d2eff5922bdcbdea342c70970d9959862fb488e6527cfb62a9b956ba9853822",
+    "game.js": "92781072aeeb8aaf271509c0708a2938d7db1f387103233ad40552f32ec8ec86",
+    "gameEngine.js": "58761dfd0694aa36221d8221bd70b8cd222d48c9577d33d4349d97fdebc7d300",
+    "gameEngineDebug.js": "db98ac691b63d594027448b24290a121163770fc1c8ee29b8252b94ad8c96bf5",
+    "host-bridge.js": "d279a60f8ba8996cca3a7d9ae96188d9942acb1278f00da267011e2e3b73d03e",
+    "index.html": "9a444da545c5c7199ca498a77cdf93d421ee277a2daddf7b7ef4bb772580017f",
+    "INTEGRATION.md": "98d539cbdbc7326a3fad579f537af38e8598973e139b32a591d45b629b9bd08d",
+    "LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "qijian-prepare.cjs": "529fe754dea000df72c5d88b8848aacb5a912d2ecb2905e91c9fca99b22f1386",
+    "source.json": "c668e0a661c851de427f41ef584d8d3d00143987b2fb2abaebdcf84bcd9b8944",
+    "tiles.png": "38c2da38620b70bc313e9019bb26321a2a57f3fb6e453a62359050c96cbb8620",
+    "upstream-source.zip": "d9847e5449e56e86382d4a345c8467eeaa1343a79816441e60f92b60e6f6d136"
+  }
+}

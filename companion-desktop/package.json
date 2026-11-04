@@ -1,0 +1,51 @@
+{
+  "name": "companion-desktop",
+  "version": "1.0.0",
+  "description": "栖间：情景式对话陪伴桌面应用",
+  "main": "./out/main/index.js",
+  "author": "Qijian",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --cache .",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "start": "electron-vite preview",
+    "predev": "node scripts/prepare-desk-tools.cjs",
+    "dev": "electron-vite dev",
+    "prebuild": "node scripts/prepare-desk-tools.cjs",
+    "build": "npm run typecheck && electron-vite build",
+    "postinstall": "install-electron && electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win --dir"
+  },
+  "dependencies": {
+    "@electron-toolkit/utils": "^4.0.0",
+    "@excalidraw/excalidraw": "0.18.1",
+    "@phosphor-icons/react": "^2.1.10",
+    "lunar-typescript": "^1.8.6",
+    "ts-fsrs": "6.0.0"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config-prettier": "^3.0.1",
+    "@electron-toolkit/eslint-config-ts": "^4.0.0",
+    "@electron-toolkit/tsconfig": "^2.0.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^44.7.2",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^6.0.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "prettier": "^3.9.10",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4"
+  }
+}
+

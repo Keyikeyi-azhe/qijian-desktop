@@ -1,0 +1,15 @@
+node_modules/
+dist/
+out/
+.env
+.env.*
+.local/
+release-media/
+companion-desktop/src/renderer/public/excalidraw/
+*.log
+*.dpapi
+*.pem
+*.key
+__pycache__/
+.eslintcache
+*.tsbuildinfo

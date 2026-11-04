@@ -1,0 +1,22 @@
+appId: studio.qijian.companion
+productName: 栖间
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**/*
+  - package.json
+  - '!node_modules/**'
+extraResources:
+  - from: release-media
+    to: starter-videos
+    filter:
+      - '*.mp4'
+      - library.json
+win:
+  executableName: 栖间
+  icon: build/icon.ico
+  target: dir
+  signExecutable: false
+npmRebuild: false
+electronDist: node_modules/electron/dist

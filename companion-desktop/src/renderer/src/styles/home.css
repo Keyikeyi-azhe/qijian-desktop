@@ -1,0 +1,336 @@
+html,
+body,
+#root,
+.desktop-shell {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.titlebar {
+  height: 36px;
+  position: relative;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  padding: 0 154px 0 18px;
+  background: #252c3a;
+  color: #e4e7ee;
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.app-about {
+  -webkit-app-region: no-drag;
+  font-size: 12px;
+}
+
+.app-about summary {
+  cursor: pointer;
+  list-style: none;
+  letter-spacing: 3px;
+  padding: 7px 4px;
+  transition: color 180ms ease;
+}
+
+.app-about summary:hover {
+  color: #fff0bd;
+}
+
+.app-about summary:focus-visible,
+.app-about a:focus-visible {
+  outline: 2px solid #b2c9ec;
+  outline-offset: 2px;
+}
+
+.app-about-content {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  width: 340px;
+  max-height: calc(100vh - 64px);
+  overflow: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f6f4ef;
+  box-shadow: 0 10px 36px #11182740;
+  color: #414858;
+  line-height: 1.8;
+  user-select: text;
+}
+
+.app-about-content p {
+  margin: 6px 0;
+}
+
+.app-about-content a {
+  color: #455d8a;
+  text-underline-offset: 3px;
+}
+
+.app-about-content pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  margin-bottom: 0;
+}
+
+.desk-space {
+  position: relative;
+  height: calc(100% - 36px);
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  overflow: hidden;
+  background: #273247;
+  --highlight: #fff0be;
+  --highlight-fill: #fff4cf1f;
+  --highlight-glow: #ffe4a594;
+}
+
+.desk-space[data-theme='night'] {
+  --highlight: #d4eeff;
+  --highlight-fill: #d6eeff24;
+  --highlight-glow: #9ed4ffb8;
+}
+
+.desk-ambience {
+  position: absolute;
+  inset: -40px;
+  z-index: -1;
+  filter: blur(28px) brightness(0.7);
+  pointer-events: none;
+}
+
+.desk-ambience img,
+.desk-wallpapers img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 800ms ease;
+  pointer-events: none;
+}
+
+.desk-ambience img {
+  object-fit: cover;
+}
+
+.desk-ambience .is-visible,
+.desk-wallpapers .is-visible {
+  opacity: 1;
+}
+
+.desk-stage {
+  position: relative;
+  width: min(100%, calc((100dvh - 36px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  flex: none;
+  user-select: none;
+}
+
+.desk-wallpapers,
+.desk-hotspots,
+.desk-labels {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.desk-hotspots {
+  overflow: visible;
+}
+
+.desk-hit {
+  fill: transparent;
+  stroke: none;
+  pointer-events: fill;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.desk-highlight {
+  pointer-events: none;
+  fill: var(--highlight-fill);
+  stroke: var(--highlight);
+  stroke-width: 1.8px;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 5px var(--highlight-glow));
+  opacity: 0;
+  transition:
+    opacity 220ms ease-out,
+    fill 150ms ease-out;
+}
+
+.desk-object[data-active='true'] .desk-highlight {
+  opacity: 1;
+}
+
+.desk-object[data-pressed='true'] .desk-highlight,
+.desk-hit:active + .desk-highlight {
+  fill: #ffffff42;
+}
+
+.desk-labels {
+  pointer-events: none;
+}
+
+.desk-label {
+  position: absolute;
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: 1px solid #ffffff40;
+  background: #252c3aee;
+  color: #fff7e7;
+  box-shadow: 0 4px 14px #11182722;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, -40%);
+  transition:
+    opacity 180ms ease-out,
+    transform 220ms ease-out;
+}
+
+.desk-label[data-visible='true'] {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.tablet-clock {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.tablet-clock text {
+  fill: #3a6680;
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+.tablet-clock-time {
+  font-size: 94px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.tablet-clock-greeting {
+  font-size: 32px;
+  letter-spacing: 10px;
+}
+.desk-space[data-theme='night'] .tablet-clock text {
+  fill: #285670;
+}
+
+.scene-pet-home {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  height: 220px;
+  pointer-events: none;
+}
+
+.scene-pet-home [role='status'] {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #252c3ade;
+  color: #fff7e7;
+  font-size: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desk-highlight,
+  .desk-label,
+  .desk-wallpapers img,
+  .desk-ambience img {
+    transition: none;
+  }
+}
+.scene-switch {
+  position: absolute;
+  left: 28.4%;
+  top: 4.8%;
+  width: 5.8%;
+  min-width: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 3;
+  -webkit-tap-highlight-color: transparent;
+}
+.scene-switch img {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.scene-switch-body {
+  transition:
+    filter 180ms ease,
+    transform 160ms ease;
+}
+.scene-switch:hover .scene-switch-body,
+.scene-switch:focus-visible .scene-switch-body {
+  filter: drop-shadow(0 0 7px var(--highlight));
+  /* Keep the base planted on the desk during hover. */
+}
+.scene-switch:active .scene-switch-body {
+  transform: translateY(3px);
+}
+.scene-switch:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 4px;
+  border-radius: 40%;
+}
+.scene-switch span {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 5px 9px;
+  border-radius: 7px;
+  background: #302a40e8;
+  color: #fff3da;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+.scene-switch:hover span,
+.scene-switch:focus-visible span {
+  opacity: 1;
+}
+.scene-error {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  color: #fff;
+  background: #302a40e8;
+  padding: 8px;
+  z-index: 4;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-switch-body,
+  .scene-switch span {
+    transition: none;
+  }
+}
+
+.desk-space[data-theme='night'] .scene-switch img {
+  filter: brightness(0.58) saturate(0.7);
+}
+.scene-switch img {
+  transition: filter 800ms ease;
+}
+.desk-space[data-theme='night'] .scene-switch:hover img,
+.desk-space[data-theme='night'] .scene-switch:focus-visible img {
+  filter: brightness(0.65) saturate(0.7) drop-shadow(0 0 4px var(--highlight));
+}

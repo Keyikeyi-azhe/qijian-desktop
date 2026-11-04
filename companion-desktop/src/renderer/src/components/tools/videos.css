@@ -1,0 +1,218 @@
+.video-library {
+  padding: 26px 30px;
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+.video-heading,
+.video-toolbar,
+.video-category-actions,
+.video-edit,
+.video-player > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.video-heading h2 {
+  font-size: 26px;
+  margin: 4px 0 10px;
+}
+.video-heading p:not(.tool-eyebrow),
+.video-toolbar > span,
+.video-grid article > p {
+  color: var(--tool-muted);
+  font-size: 13px;
+}
+.video-library button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  min-height: 38px;
+}
+.video-library button:hover {
+  background: var(--tool-soft);
+}
+.video-library .tool-primary {
+  background: var(--tool-accent);
+  color: var(--tool-paper);
+}
+.video-library label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.video-library input,
+.video-library select {
+  padding: 9px 12px;
+  border: 1px solid var(--tool-line);
+  border-radius: 8px;
+  background: var(--tool-paper);
+  color: var(--tool-ink);
+  min-width: 0;
+}
+.video-toolbar {
+  margin: 22px 0 16px;
+}
+.video-toolbar input {
+  width: 260px;
+}
+.video-categories {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 0 18px;
+}
+.video-categories button {
+  border: 1px solid var(--tool-line);
+}
+.video-categories [aria-pressed='true'] {
+  background: var(--tool-accent);
+  color: var(--tool-paper);
+  border-color: var(--tool-accent);
+}
+.video-category-actions {
+  justify-content: flex-start;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.video-edit {
+  justify-content: flex-start;
+  padding: 16px;
+  background: var(--tool-soft);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.video-edit input {
+  width: 300px;
+}
+.video-player {
+  background: var(--tool-soft);
+  border: 1px solid var(--tool-line);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.video-player video {
+  display: block;
+  width: 100%;
+  max-height: 370px;
+  background: #12151c;
+}
+.video-player > div {
+  padding: 10px 18px;
+}
+.video-player h3 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.video-empty {
+  text-align: center;
+  padding: 60px 20px;
+  border: 1px dashed var(--tool-line);
+  border-radius: 16px;
+  color: var(--tool-muted);
+}
+.video-empty h3 {
+  color: var(--tool-ink);
+  font-size: 20px;
+}
+.video-empty svg {
+  color: var(--tool-accent);
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.video-grid article {
+  padding: 13px;
+  border: 1px solid var(--tool-line);
+  border-radius: 12px;
+}
+.video-grid article.is-selected {
+  border-color: var(--tool-accent);
+  background: var(--tool-soft);
+}
+.video-grid .video-card-play {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+}
+.video-cover {
+  background: var(--tool-soft);
+  border-radius: 8px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--tool-accent);
+}
+.video-card-play strong {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  margin-top: 6px;
+}
+.video-grid article > p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+}
+.video-grid select {
+  flex: 1;
+  max-width: 100%;
+}
+.video-card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.video-card-actions button {
+  font-size: 12px;
+}
+.video-drop-overlay {
+  position: absolute;
+  inset: 6px;
+  background: color-mix(in srgb, var(--tool-paper) 92%, transparent);
+  border: 2px dashed var(--tool-accent);
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  color: var(--tool-accent);
+  pointer-events: none;
+  z-index: 5;
+}
+.video-library .tool-error {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.video-library progress {
+  width: 100%;
+  height: 5px;
+  accent-color: var(--tool-accent);
+}
+@media (max-width: 800px) {
+  .video-heading,
+  .video-toolbar,
+  .video-edit {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .video-library {
+    padding: 18px;
+  }
+  .video-edit input {
+    width: auto;
+    flex: 1;
+  }
+}

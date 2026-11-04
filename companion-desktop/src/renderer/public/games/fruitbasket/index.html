@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>水果篮子</title>
+    <link rel="stylesheet" href="fruit.css" />
+    <script src="host-bridge.js"></script>
+  </head>
+  <body>
+    <main class="fruit-wrap">
+      <aside>
+        <p class="eyebrow">FRUIT BASKET</p>
+        <h1>慢慢，<br />装满一篮甜。</h1>
+        <div class="score-box">
+          <span>这一局</span><strong id="score">0</strong><span>最好成绩 <b id="best">0</b></span>
+        </div>
+        <div class="next-box"><span>下一颗</span><img id="next" alt="下一颗水果" /></div>
+        <p class="hint">移动鼠标，点击放下水果。<br />相同水果碰在一起就会长大。</p>
+        <span class="adaptation">Fruit Basket · 网页适配版</span>
+      </aside>
+      <section class="fruit-stage">
+        <canvas
+          id="fruit-canvas"
+          width="480"
+          height="640"
+          tabindex="0"
+          aria-label="水果合成区域，左右键移动，空格投放"
+        ></canvas>
+        <div id="fruit-result" hidden>
+          <h2>篮子装满啦</h2>
+          <p>换个落点，再试一局。</p>
+          <button id="fruit-again">再来一篮</button>
+        </div>
+        <div id="fruit-toast" role="status"></div>
+      </section>
+    </main>
+    <script src="matter.min.js"></script>
+    <script src="fruit.js"></script>
+  </body>
+</html>
